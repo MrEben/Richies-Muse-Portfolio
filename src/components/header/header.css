@@ -1,151 +1,92 @@
 header {
-  /* top: 0; */
   height: 100vh;
+  width: 100vw;
   overflow: hidden;
-}
-.signin-btn {
-  display: none;
-}
-.hero::before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 65%;
+  display: grid;
+  place-items: center;
+  margin-top: 3rem;
   top: 0;
-  left: 0;
-  background: url(./images/hero.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  z-index: -1;
 }
-.hero {
-  position: relative;
-  min-height: 100vh;
-  margin-top: -5rem;
+.main__header_container {
+  height: 100%;
   display: grid;
-  grid-template-columns: 1fr;
-  justify-items: center;
-}
-.hero-center {
-  width: 90vw;
-  max-width: var(--max-width);
-  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
+  justify-content: space-between;
+  gap: 6rem;
 }
-
-.hero-info h1 {
-  text-transform: none;
-  max-width: 500px;
-  margin-bottom: 2rem;
-  left: 5rem;
+.main__header_left {
+  margin-top: -3rem;
 }
-.hero-info p {
-  max-width: 35em;
-  line-height: 1.8;
+.main__header_right {
+  display: grid;
+  place-items: center;
+  position: relative;
 }
-.hero-images {
-  display: none;
+.main__header_left h4 {
+  margin-bottom: 1rem;
+  font-weight: 400;
+  color: var(--clr-primary-6);
 }
-
-/* hero media query */
-@media screen and (min-width: 800px) {
-  .hero::before {
-    background-size: contain;
-    height: 100%;
-  }
-  .hero-center {
-    grid-template-columns: 2fr 1fr;
-  }
-
-  .hero-info h1 {
-    font-size: 3rem;
-  }
-  .hero-info p {
-    font-size: 1.25rem;
-  }
-  .hero-images {
-    display: block;
-    justify-self: center;
-  }
-  .phone-img {
-    width: 12rem;
-  }
+.main__header_left p {
+  margin: 1rem 0;
+  font-size: 1.1rem;
 }
-
-@media screen and (min-width: 1200px) {
-  .hero-center {
-    grid-template-columns: 2fr 1fr;
-    align-items: center;
-  }
-  .hero-info h1 {
-    max-width: 100%;
-    font-size: 5.5rem;
-  }
-  .hero-images {
-    align-self: end;
-  }
-  .phone-img {
-    width: 15rem;
-  }
+.btns {
+  display: flex;
+  gap: 0.8rem;
 }
-
-/* links */
-.submenu {
+.extra {
+  color: var(--clr-white);
+  background: var(--clr-primary-6);
+}
+.extra:hover {
+  color: var(--clr-primary-6);
   background: var(--clr-white);
-  box-shadow: var(--dark-shadow);
-  position: absolute;
-  top: 4rem;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 3;
-  display: none;
-  padding: 2rem;
-  border-radius: var(--radius);
+}
+.main__header-image {
+  left: 2rem;
+  position: relative;
+}
+.main__header-image:hover {
+  transform: rotate(10deg);
   transition: var(--transition);
 }
-.submenu::before {
-  content: '';
-  display: block;
-  width: 0;
-  height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-bottom: 5px solid var(--clr-white);
+.main__header-square {
+  padding-bottom: 10rem;
+  width: 30rem;
+  height: 25rem;
+  background: linear-gradient(30deg, var(--clr-primary-6), transparent);
   position: absolute;
-  top: -5px;
-  left: 50%;
-  transform: translateX(-50%);
+  border-radius: 2rem;
 }
 
-.submenu.show {
-  display: block;
+/* ===========MEDIA QUERRIES MEDIUM ========*/
+@media screen and (max-width: 1024px) {
+  header {
+    height: fit-content;
+    padding: 8rem 0;
+  }
+  .main__header_container {
+    gap: 0;
+  }
+  .main__header-square {
+    width: 16rem;
+  }
 }
-
-.submenu-center {
-  display: grid;
-  gap: 0.25rem 2rem;
-}
-.col-2 {
-  grid-template-columns: repeat(2, 1fr);
-}
-.col-3 {
-  grid-template-columns: repeat(3, 1fr);
-}
-.col-4 {
-  grid-template-columns: repeat(4, 1fr);
-}
-.submenu h4 {
-  margin-bottom: 1.5rem;
-}
-.submenu-center a {
-  width: 10rem;
-  display: block;
-  color: var(--clr-grey-1);
-  text-transform: capitalize;
-  display: flex;
-  align-items: center;
-}
-.submenu-center svg {
-  color: var(--clr-grey-5);
-  margin-right: 1rem;
+/* ===========MEDIA QUERRIES SMALL ========*/
+@media screen and (max-width: 600px) {
+  header {
+    top: 0;
+    padding: 12rem 0 0;
+  }
+  .main__header_right {
+    position: absolute;
+    z-index: -999;
+    opacity: 0.1;
+  }
+  .main__header_container {
+    grid-template-columns: 1fr;
+  }
 }

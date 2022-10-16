@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 :root {
   /* dark shades of primary color*/
@@ -34,6 +33,8 @@
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
 
+  --container-width-lg: 80%;
+  --container-width-md: 90%;
 }
 /*
 =============== 
@@ -62,14 +63,15 @@ body {
 html {
   scroll-behavior: smooth;
 }
-/* ::-webkit-scrollbar {
+::-webkit-scrollbar {
   display: none;
-} */
+}
 
 /* ========GENERAL CLASSES======= */
 .container {
   width: var(--container-width-lg);
-  margin: 0 auto;
+  margin-inline: auto;
+  max-width: 1920px;
   text-transform: capitalize;
 }
 
@@ -86,6 +88,7 @@ h1 {
 section {
   margin-top: 8rem;
   height: 100vh;
+  padding-top: 4.5rem;
 }
 
 section > h2,
@@ -110,17 +113,20 @@ a:hover {
 .btn {
   width: max-content;
   display: inline-block;
-  color: var(--clr-primary-6);
+  color: var(--clr-grey-1);
+  background: var(--clr-white);
   padding: 0.75rem 1.2rem;
   border-radius: 0.4rem;
   cursor: pointer;
   border: 1px solid var(--clr-primary-6);
   transition: var(--transition);
+  font-weight: 600;
+  text-transform: capitalize;
 }
 
 .btn:hover {
-  background: var(--clr-white);
-  color: var(--clr-grey-1);
+  background: var(--clr-primary-6);
+  color: var(--clr-white);
   border: transparent;
 }
 .btn-primary {
@@ -131,6 +137,7 @@ img {
   object-fit: cover;
   display: block;
   width: 100%;
+  border-radius: 2rem;
 }
 
 /* =====MEDIA QUERRIES(MEDIUM)====== */
@@ -143,15 +150,21 @@ img {
   .section {
     margin-top: 6rem;
   }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.6rem;
+  }
 }
 /* =====MEDIA QUERRIES(SMALL)====== */
 
 @media screen and (max-width: 600px) {
-  .container {
-    width: var(--container-width-sm);
-  }
-
   .section > h2 {
     margin-bottom: 2rem;
+  }
+  h1 {
+    font-size: 2.2rem;
+    line-height: 1.1rem;
   }
 }
