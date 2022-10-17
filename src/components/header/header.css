@@ -53,6 +53,9 @@ header {
   transform: rotate(10deg);
   transition: var(--transition);
 }
+.homepage-img {
+  border-radius: 2rem;
+}
 .main__header-square {
   padding-bottom: 10rem;
   width: 30rem;

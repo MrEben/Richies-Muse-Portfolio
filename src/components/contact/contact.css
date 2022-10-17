@@ -1,18 +1,43 @@
 .each-option h5 {
   text-transform: none;
 }
-
+#contact {
+  display: grid;
+  place-items: center;
+}
+#contact h2 {
+  color: var(--clr-primary-5);
+  text-transform: capitalize;
+  font-weight: 700;
+  letter-spacing: var(--spacing);
+  display: flex;
+  justify-content: center;
+}
 .container.contact__container {
   width: 70%;
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  /* display: grid;
   grid-template-columns: 30% 58%;
-  gap: 12%;
+  gap: 12%; */
+}
+.upper {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 2%;
+  margin-bottom: 2rem;
+}
+
+.contact-img {
+  height: 100%;
+  border-radius: 2rem;
 }
 
 .contact__options {
   display: flex;
-  flex-direction: column;
   gap: 1.2rem;
+  /* justify-content: space-betwween; */
+  justify-content: center;
 }
 .each-option {
   background: var(--clr-primary-2);
@@ -73,5 +98,17 @@ textarea {
     width: 90%;
     grid-template-columns: 1fr;
     gap: 2rem;
+  }
+  .contact-img {
+    position: absolute;
+    z-index: -999;
+    opacity: 0.1;
+    width: 100vw;
+  }
+  .upper {
+    grid-template-columns: 1fr;
+  }
+  .contact__options {
+    flex-direction: column;
   }
 }

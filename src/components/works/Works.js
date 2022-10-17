@@ -1,34 +1,19 @@
 import React, { useState } from 'react';
-import Menu from './Menu';
-import Categories from './Categories';
-// import items from './data';
-import { itemss } from './data';
+import photos from './data';
 import './works.css';
-import Gallery from 'react-photo-gallery';
-// const allCategories = ['all', ...new Set(items.map((item) => item.category))];
+import Masonry from 'react-responsive-masonry';
 
 function Works() {
-  // const [menuItems, setMenuItems] = useState(items);
-  // const [categories, setCategories] = useState(allCategories);
-
-  // const filterItems = (category) => {
-  //   if (category === 'all') {
-  //     setMenuItems(items);
-  //     return;
-  //   }
-  //   const newItems = items.filter((item) => item.category === category);
-  //   setMenuItems(newItems);
-  // };
-
   return (
     <main>
-      <div id="works" className="menu section">
-        {/* <div className="title">
-          <div className="underline"></div>
-        </div>
-        <Categories categories={categories} filterItems={filterItems} />
-        <Menu items={menuItems} /> */}
-        {/* <Gallery numCols={3} photos={itemss} /> */}
+      <div id="works" className="photos-section">
+        <h2>my works</h2>
+        <div className="underline"></div>
+        <Masonry colummnsCount={4} gutter={6}>
+          {photos.map((images) => (
+            <img className="photo" key={images.id} src={images.img} alt="" />
+          ))}
+        </Masonry>
       </div>
     </main>
   );

@@ -3,12 +3,39 @@ import './contact.css';
 import { MdOutlineEmail } from 'react-icons/md';
 import { RiMessengerLine } from 'react-icons/ri';
 import { BsWhatsapp } from 'react-icons/bs';
+import Img from '../header/images/new.jpg';
 
 const Contact = () => {
   return (
-    <section id="contact">
+    <div id="contact">
       <h2>Contact Me</h2>
+      <div className="underline"></div>
       <div className="container contact__container">
+        <div className="upper">
+          <img className="contact-img" src={Img} alt="" />
+          <form action="">
+            <input
+              type="text"
+              name="name"
+              placeholder="Your Full Name Here..."
+              required
+            />
+            <input
+              type="text"
+              name="email"
+              placeholder="Your Email Here..."
+              required
+            />
+            <textarea
+              name="message"
+              rows="7"
+              placeholder="Your Message Here"
+            ></textarea>
+            <button type="submit" className="btn btn-primary">
+              send message
+            </button>
+          </form>
+        </div>
         <div className="contact__options">
           <article className="each-option">
             <MdOutlineEmail className="icon" />
@@ -38,30 +65,8 @@ const Contact = () => {
             </a>
           </article>
         </div>
-        <form action="">
-          <input
-            type="text"
-            name="name"
-            placeholder="Your Full Name Here..."
-            required
-          />
-          <input
-            type="text"
-            name="email"
-            placeholder="Your Email Here..."
-            required
-          />
-          <textarea
-            name="message"
-            rows="7"
-            placeholder="Your Message Here"
-          ></textarea>
-          <button type="submit" className="btn btn-primary">
-            send message
-          </button>
-        </form>
       </div>
-    </section>
+    </div>
   );
 };
 

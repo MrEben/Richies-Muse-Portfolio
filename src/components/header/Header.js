@@ -1,6 +1,6 @@
 import React from 'react';
 import './header.css';
-import phoneImg from './images/new.jpg';
+import Img from './images/new.jpg';
 
 const Header = () => {
   return (
@@ -26,7 +26,7 @@ const Header = () => {
           <div className="main__header_right">
             <div className="main__header-square"></div>
             <div className="main__header-image">
-              <img src={phoneImg} alt="" />
+              <img className='homepage-img' src={Img} alt="" />
             </div>
           </div>
         </div>

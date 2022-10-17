@@ -74,6 +74,13 @@ html {
   max-width: 1920px;
   text-transform: capitalize;
 }
+.underline {
+  width: 10rem;
+  height: 0.3rem;
+  background: var(--clr-primary-5);
+  margin-bottom: 1rem;
+  text-align: center;
+}
 
 h1,
 h2,
@@ -137,7 +144,6 @@ img {
   object-fit: cover;
   display: block;
   width: 100%;
-  border-radius: 2rem;
 }
 
 /* =====MEDIA QUERRIES(MEDIUM)====== */
