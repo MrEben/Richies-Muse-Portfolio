@@ -7,7 +7,7 @@ import Img from '../header/images/new.jpg';
 
 const Contact = () => {
   return (
-    <div id="contact">
+    <section id="contact">
       <h2>Contact Me</h2>
       <div className="underline"></div>
       <div className="container contact__container">
@@ -66,7 +66,7 @@ const Contact = () => {
           </article>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

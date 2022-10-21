@@ -1,5 +1,67 @@
-#about{
+/* #about{
     top: 0;
     position: relative;
-    /* height: -100vh; */
+    height: -100vh;
+} */
+
+.container.about__container {
+  width: 70%;
+  display: grid;
+  grid-template-columns: 40% 53%;
+  gap: 7%;
+  height: 100vh;
+  margin-bottom: 2rem;
+}
+#about h2 {
+  color: var(--clr-primary-5);
+  text-transform: capitalize;
+  font-weight: 700;
+  letter-spacing: var(--spacing);
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+}
+
+.about-img {
+  height: 80%;
+  width: 100%;
+  border-radius: 2rem;
+}
+.about-message {
+  align-items: center;
+}
+.about-message h3 {
+  color: var(--clr-primary-10);
+  text-transform: capitalize;
+  font-weight: 700;
+  letter-spacing: var(--spacing);
+  margin-bottom: 0;
+}
+.about-message p {
+  color: var(--clr-primary-9);
+  text-transform: capitalize;
+  font-weight: 700;
+  letter-spacing: var(--spacing);
+  margin-bottom: 0;
+}
+
+/* =====MEDIA QUERRIES(MEDIUM)====== */
+
+@media screen and (max-width: 1024px) {
+  .container.contact__container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+/* =====MEDIA QUERRIES(SMALL)====== */
+
+@media screen and (max-width: 600px) {
+  .container.about__container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
 }
