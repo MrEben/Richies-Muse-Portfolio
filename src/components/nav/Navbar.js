@@ -5,12 +5,21 @@ import logo from './logo.svg';
 import './nav.css';
 
 const Navbar = () => {
+  const [navbar, setnavbar] = useState(false);
   const [showLinks, setShowLinks] = useState(false);
   const linksContainerRef = useRef(null);
   const linksRef = useRef(null);
   const toggleLinks = () => {
     setShowLinks(!showLinks);
   };
+  const changeNavBackground = () => {
+    if (window.scrollY >= 80) {
+      setnavbar(true);
+    } else {
+      setnavbar(false);
+    }
+  };
+  window.addEventListener('scroll', changeNavBackground);
   useEffect(() => {
     const linksHeight = linksRef.current.getBoundingClientRect().height;
     if (showLinks) {
@@ -20,7 +29,7 @@ const Navbar = () => {
     }
   }, [showLinks]);
   return (
-    <nav>
+    <nav className={navbar ? 'active' : 'not-active'}>
       <div className="nav-center">
         <div className="nav-header">
           <img src={logo} className="logo" alt="logo" />

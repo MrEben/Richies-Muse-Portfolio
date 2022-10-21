@@ -18,12 +18,13 @@ header {
 }
 .main__header_left {
   margin-top: -3rem;
+  letter-spacing:0.1rem
 }
 .main__header_right {
   display: grid;
   place-items: center;
   position: relative;
-}
+} 
 .main__header_left h4 {
   margin-bottom: 1rem;
   font-weight: 400;

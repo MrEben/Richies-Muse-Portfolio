@@ -17,8 +17,6 @@
 
 .photo {
   object-fit: cover;
-  /* height: 400px; */
-  /* width: 100vw; */
   border: 0.25rem solid var(--clr-grey-2);
   border-radius: var(--radius);
   display: block;
@@ -29,3 +27,19 @@
     width: 95vw;
   }
 }
+
+/* .new_masonry {
+  width: 90vw;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 25rem);
+  grid-auto-rows: 0.5rem;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+img {
+  height: 100%;
+} */
