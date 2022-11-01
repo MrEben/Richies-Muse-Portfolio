@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { FaBars } from 'react-icons/fa';
 import { links, social } from './data';
-import logo from './logo.svg';
+import logo from '../../assets/Wise b SG_Main Logo 2.svg';
 import './nav.css';
 
 const Navbar = () => {

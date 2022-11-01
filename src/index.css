@@ -1,32 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 :root {
   /* dark shades of primary color*/
-  --clr-primary-1: hsl(205, 86%, 17%);
-  --clr-primary-2: hsl(205, 77%, 27%);
-  --clr-primary-3: hsl(205, 72%, 37%);
-  --clr-primary-4: hsl(205, 63%, 48%);
+  --clr-primary-1: rgb(244, 142, 19);
+  --clr-primary-2: hsl(32.99, 88%, 27%);
+  --clr-primary-3: hsl(32.99, 72%, 37%);
+  --clr-primary-4: hsl(32.99, 63%, 48%);
   /* primary/main color */
-  --clr-primary-5: hsl(205, 78%, 60%);
+  --clr-primary-5: hsl(32.99, 68%, 51%);
   /* lighter shades of primary color */
-  --clr-primary-6: hsl(205, 89%, 70%);
-  --clr-primary-7: hsl(205, 90%, 76%);
-  --clr-primary-8: hsl(205, 86%, 81%);
-  --clr-primary-9: hsl(205, 90%, 88%);
-  --clr-primary-10: hsl(205, 100%, 96%);
+  --clr-primary-6: rgb(241, 142, 21);
+  --clr-primary-7: hsl(32.99, 90%, 76%);
+  --clr-primary-8: hsl(32.99, 86%, 81%);
+  --clr-primary-9: hsl(32.99, 90%, 88%);
+  --clr-primary-10: hsl(32.99, 100%, 96%);
   /* darkest grey - used for headings */
-  --clr-grey-1: hsl(209, 61%, 16%);
-  --clr-grey-2: hsl(211, 39%, 23%);
-  --clr-grey-3: hsl(209, 34%, 30%);
-  --clr-grey-4: hsl(209, 28%, 39%);
+  --clr-grey-1: rgb(109, 22, 22);
+  --clr-grey-2: rgb(255, 0, 0);
+  --clr-grey-4: rgb(160, 6, 6);
+  --clr-grey-4: hsl(3, 63%, 25%);
   /* grey used for paragraphs */
-  --clr-grey-5: hsl(210, 22%, 49%);
-  --clr-grey-6: hsl(209, 23%, 60%);
-  --clr-grey-7: hsl(211, 27%, 70%);
-  --clr-grey-8: hsl(210, 31%, 80%);
-  --clr-grey-9: hsl(212, 33%, 89%, 0.9);
+  --clr-grey-5: orange;
+  --clr-grey-6: hsl(0, 84%, 65%);
+  --clr-grey-7: hsl(0, 82%, 75%);
+  --clr-grey-8: hsl(210, 76%, 25%);
+  --clr-grey-9: rgba(240, 202, 202, 0.9);
   --clr-grey-10: hsl(210, 36%, 96%);
+  --clr-pink: rgb(246, 129, 149);
   --clr-white: #fff;
   --clr-black: #222;
+  --clr-light-black: rgb(18, 17, 17, 0.9);
   --transition: all 400ms ease;
   --spacing: 0.1rem;
   --radius: 0.25rem;
@@ -57,7 +59,7 @@ body {
   background: var(--clr-grey-1);
   color: var(--clr-white);
   line-height: 1.7;
-  background-image: url(./assets/bg-texture.png);
+  /* background-image: url(./assets/bg-texture.png); */
 }
 
 html {

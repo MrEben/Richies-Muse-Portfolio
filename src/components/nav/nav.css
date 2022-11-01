@@ -1,9 +1,9 @@
 nav {
   z-index: 2;
   top: 0;
-  position: fixed;
+  /* position: fixed; */
   width: 100vw;
-  background: linear-gradient(-70deg, rgba(0, 0, 0, 0.3), transparent);
+  /* background: linear-gradient(-70deg, rgba(0, 0, 0, 0.3), transparent); */
 }
 .nav-header {
   display: flex;
@@ -51,7 +51,7 @@ nav {
   height: 10rem;
 }
 .active {
-  background: linear-gradient(30deg, black, transparent);
+  background: linear-gradient(30deg, var(--clr-white), transparent);
 }
 /* links */
 .submenu {

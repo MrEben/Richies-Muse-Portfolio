@@ -1,12 +1,18 @@
-import Img1 from './images/item-1.jpeg';
-import Img2 from './images/item-2.jpeg';
-import Img3 from './images/item-3.jpeg';
-import Img4 from './images/item-4.jpeg';
-import Img5 from './images/item-5.jpeg';
-import Img6 from './images/item-6.jpeg';
-import Img7 from './images/item-7.jpeg';
-import Img8 from './images/item-8.jpeg';
-import Img9 from './images/item-9.jpeg';
+import Img1 from '../../assets/pic-1.jpg';
+import Img2 from '../../assets/pic-2.jpg';
+import Img3 from '../../assets/pic-3.jpg';
+import Img4 from '../../assets/pic-4.jpg';
+import Img5 from '../../assets/pic-5.jpg';
+import Img6 from '../../assets/pic-6.jpg';
+import Img7 from '../../assets/pic-7.jpg';
+import Img8 from '../../assets/pic-8.jpg';
+import Img9 from '../../assets/pic-9.jpg';
+import Img10 from '../../assets/pic-10.jpg';
+import Img11 from '../../assets/pic-11.jpg';
+import Img12 from '../../assets/pic-12.jpg';
+import Img13 from '../../assets/pic-13.jpg';
+import Img14 from '../../assets/pic-14.jpg';
+import Img15 from '../../assets/pic-15.jpg';
 const photos = [
   {
     id: 1,
@@ -80,7 +86,53 @@ const photos = [
     img: `${Img9}`,
     desc: `skateboard fam synth authentic semiotics. Live-edge lyft af, edison bulb yuccie crucifix microdosing.`,
   },
+  {
+    id: 10,
+    title: 'quarantine buddy',
+    category: 'shakes',
+    price: 16.99,
+    img: `${Img10}`,
+    desc: `skateboard fam synth authentic semiotics. Live-edge lyft af, edison bulb yuccie crucifix microdosing.`,
+  },
+  {
+    id: 11,
+    title: 'quarantine buddy',
+    category: 'shakes',
+    price: 16.99,
+    img: `${Img11}`,
+    desc: `skateboard fam synth authentic semiotics. Live-edge lyft af, edison bulb yuccie crucifix microdosing.`,
+  },
+  {
+    id: 12,
+    title: 'quarantine buddy',
+    category: 'shakes',
+    price: 16.99,
+    img: `${Img12}`,
+    desc: `skateboard fam synth authentic semiotics. Live-edge lyft af, edison bulb yuccie crucifix microdosing.`,
+  },
+  {
+    id: 13,
+    title: 'quarantine buddy',
+    category: 'shakes',
+    price: 16.99,
+    img: `${Img13}`,
+    desc: `skateboard fam synth authentic semiotics. Live-edge lyft af, edison bulb yuccie crucifix microdosing.`,
+  },
+  {
+    id: 14,
+    title: 'quarantine buddy',
+    category: 'shakes',
+    price: 16.99,
+    img: `${Img14}`,
+    desc: `skateboard fam synth authentic semiotics. Live-edge lyft af, edison bulb yuccie crucifix microdosing.`,
+  },
+  {
+    id: 15,
+    title: 'quarantine buddy',
+    category: 'shakes',
+    price: 16.99,
+    img: `${Img15}`,
+    desc: `skateboard fam synth authentic semiotics. Live-edge lyft af, edison bulb yuccie crucifix microdosing.`,
+  },
 ];
 export default photos;
-
-

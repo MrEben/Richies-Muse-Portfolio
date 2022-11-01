@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './header.css';
-import Img from './images/new.jpg';
+import Img from '../../assets/pic-12.jpg';
 
 const Header = () => {
   const [show, setshow] = useState(false);
@@ -19,15 +19,16 @@ const Header = () => {
       <header id="header">
         <div className="container main__header_container">
           <div className="main__header_left">
-            <h4>Welcome to my potfolio</h4>
+            <span className="welcome">Welcome to my portfolio</span>
             {show ? (
               <h1>I'M RICHARD,graphic designer</h1>
             ) : (
               <h2>I'M RICHARD,graphic designer</h2>
             )}
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Accusantium velit dicta animi excepturi necessitatibus expedita
+              Experience creativity at it's best. Work with a creative mind that
+              can absorb visual trends and deploy them in fresh and exciting
+              ways.
             </p>
             <div className="btns">
               <a href="#works" className="btn">

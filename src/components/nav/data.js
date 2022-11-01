@@ -1,6 +1,5 @@
 import React from 'react';
 import { FaBehance, FaFacebook, FaLinkedin, FaTwitter } from 'react-icons/fa';
-// import { FaCreditCard, FaBook, FaBriefcase } from 'react-icons/fa';
 
 export const links = [
   {
@@ -28,49 +27,22 @@ export const links = [
 export const social = [
   {
     id: 1,
-    url: 'https://www.twitter.com',
+    url: 'https://www.facebook.com/richiesmuse',
     icon: <FaFacebook />,
   },
   {
     id: 2,
-    url: 'https://www.twitter.com',
+    url: 'https://www.twitter.com/richardsewornu?s=21&t=nRO8PVFOSWxEKHCmmuEDsw',
     icon: <FaTwitter />,
   },
   {
     id: 3,
-    url: 'https://www.twitter.com',
+    url: 'https://www.linkedin.com/richardsewornu-10b503128',
     icon: <FaLinkedin />,
   },
   {
     id: 4,
-    url: 'https://www.twitter.com',
+    url: 'https://www.behance.net/richardsewornu',
     icon: <FaBehance />,
   },
 ];
-// const sublinks = [
-//   {
-//     page: 'works',
-//     links: [
-//       { label: 'payment', icon: <FaCreditCard />, url: '/products' },
-//       { label: 'terminal', icon: <FaCreditCard />, url: '/products' },
-//       { label: 'connect', icon: <FaCreditCard />, url: '/products' },
-//     ],
-//   },
-//   {
-//     page: 'contact',
-//     links: [
-//       { label: 'plugins', icon: <FaBook />, url: '/products' },
-//       { label: 'libraries', icon: <FaBook />, url: '/products' },
-//       { label: 'help', icon: <FaBook />, url: '/products' },
-//       { label: 'billing', icon: <FaBook />, url: '/products' },
-//     ],
-//   },
-//   {
-//     page: 'home',
-//     links: [
-//       { label: 'about', icon: <FaBriefcase />, url: '/products' },
-//       { label: 'customers', icon: <FaBriefcase />, url: '/products' },
-//     ],
-//   },
-// ];
-// export default sublinks;
