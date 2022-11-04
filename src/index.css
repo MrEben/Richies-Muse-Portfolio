@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 :root {
   /* dark shades of primary color*/
   --clr-primary-1: rgb(244, 142, 19);
@@ -55,9 +55,9 @@ Global Styles
   text-decoration: none;
 }
 body {
-  font-family: 'Poppins', sans-serif;
-  background: var(--clr-grey-1);
-  color: var(--clr-white);
+  font-family: "Poppins", sans-serif;
+  background: var(--clr-white);
+  color: var(--clr-black);
   line-height: 1.7;
   /* background-image: url(./assets/bg-texture.png); */
 }

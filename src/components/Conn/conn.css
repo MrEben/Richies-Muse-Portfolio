@@ -30,11 +30,14 @@
   display: grid;
   grid-template-rows: 60% 40%;
 }
-.heading {
+.head-ing {
   text-align: left;
   letter-spacing: var(--spacing);
 }
-
+.head-ing h2,
+h4 {
+  color: var(--clr-white);
+}
 .options {
   margin-top: 2rem;
   display: grid;
@@ -65,7 +68,7 @@
 }
 .social-icons-here {
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
   padding: 2rem;
   display: flex;
   align-items: flex-end;
@@ -127,7 +130,7 @@ textarea {
   border-radius: 1.2rem;
   border: 2px solid black;
   padding: 1.5rem;
-  color: white;
+  color: var(--clr-black);
 }
 .inputs {
   border-left: none;
@@ -145,6 +148,13 @@ textarea {
   .main-contact-section {
     grid-template-columns: 1fr;
     height: fit-content;
+  }
+  .social-icons-here {
+    gap: 2rem;
+  }
+  .lower {
+    display: grid;
+    grid-template-columns: 60% 40%;
   }
 }
 
@@ -166,10 +176,16 @@ textarea {
     flex-direction: column;
     align-items: flex-start;
   }
-  .heading h2 {
+  .head-ing h2 {
     font-size: 1.1rem;
   }
   .box-1 {
     margin-left: 0.5rem;
+  }
+  .social-icons-here {
+    gap: 1rem;
+  }
+  .lower {
+    grid-template-columns: 50% 50%;
   }
 }

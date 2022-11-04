@@ -1,7 +1,7 @@
-import React from 'react';
-import './about.css';
-import Img from '../../assets/pic-12.jpg';
-import { experiences } from './data';
+import React from "react";
+import "./about.css";
+import Img from "../../assets/pic-12.jpg";
+import { experiences } from "./data";
 
 const About = () => {
   return (
@@ -27,13 +27,12 @@ const About = () => {
                 );
               })}
             </div>
-            <p>
-              LThe primary objective of any design is to speak to it's customers
+            <p className="animate__fadeInLeft">
+              The primary objective of any design is to speak to it's customers
               effectively to convey messages and ideas. As a designer, I ensure
               that the custumer understands the objective of the design
               effectively. I ensure with mulyiple tools depending on the medium
-              and goals of the final project.
-              Praesentium,
+              and goals of the final project. Praesentium,
             </p>
             <a href="#contact" className="btn btn-primary">
               lets talk

@@ -1,6 +1,6 @@
-import './conn.css';
-import { options } from './data';
-import { social } from '../nav/data';
+import "./conn.css";
+import { options } from "./data";
+import { social } from "../nav/data";
 
 const Conn = () => {
   return (
@@ -13,7 +13,7 @@ const Conn = () => {
         <article className="main-contact-section">
           <div className="contact-info">
             <div className="contain-all">
-              <div className="heading">
+              <div className="head-ing">
                 <h2>contact informaton</h2>
                 <h4>
                   fill up the form and i wil get back to you within 24hours
@@ -22,7 +22,7 @@ const Conn = () => {
                   const { id, icon, info, link } = item;
                   return (
                     <article key={id} className="options">
-                      <a className="option-link" href={link}>
+                      <a className="option-link" target="_blank" href={link}>
                         <div className="icon-here">{icon}</div>
                         <h4>{info}</h4>
                       </a>
@@ -37,7 +37,9 @@ const Conn = () => {
                   const { id, url, icon } = socialIcon;
                   return (
                     <li key={id}>
-                      <a href={url}>{icon}</a>
+                      <a target="_blank" href={url}>
+                        {icon}
+                      </a>
                     </li>
                   );
                 })}
@@ -65,70 +67,12 @@ const Conn = () => {
                 name="message"
                 rows="7"
                 placeholder="Your Message Here"
+                required
               ></textarea>
               <button type="submit" className="btn btn-primary">
                 send message
               </button>
             </form>
-            {/* <div className="upper-section">
-              <div className="left-sec inputs">
-                <form action="">
-                  <label>first name</label>
-                  <input
-                    className="inputs"
-                    type="text"
-                    name="FirstName"
-                    placeholder="Your first name here..."
-                    required
-                  />
-                  <label>last name</label>
-                  <input
-                    className="inputs"
-                    type="text"
-                    name="lastName"
-                    placeholder="Your last name here..."
-                    required
-                  />
-                </form>
-              </div>
-              <div className="right inputs">
-                <form action="">
-                  <label>email</label>
-                  <input
-                    className="inputs"
-                    type="text"
-                    name="email"
-                    placeholder="Your email here..."
-                    required
-                  />
-                  <label>phone</label>
-                  <input
-                    className="inputs"
-                    type="text"
-                    name="email"
-                    placeholder="Your number here..."
-                    required
-                  />
-                </form>
-              </div>
-            </div>
-            <div className="lower-section">
-              <div className="right inputs">
-                <label>message</label>
-                <form action="">
-                  <textarea
-                    className="inputs"
-                    type="text"
-                    name="message"
-                    rows="5"
-                    placeholder="Your Message Here"
-                  ></textarea>
-                  <button type="submit" className="btn btn-primary">
-                    send message
-                  </button>
-                </form>
-              </div>
-            </div> */}
           </div>
         </article>
       </div>

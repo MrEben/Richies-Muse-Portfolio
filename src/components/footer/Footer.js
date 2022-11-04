@@ -1,12 +1,13 @@
-import React from 'react';
-import './footer.css';
-import { FaBehance, FaFacebook, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import React from "react";
+import "./footer.css";
+import { FaBehance, FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa";
+import logo from "../../assets/Wise b SG_Main Logo 2.svg";
 
 const Footer = () => {
   return (
     <footer>
       <a href="#" className="footer__logo">
-        RICHIES
+        <img className="foot-logo" src={logo} alt="" />
       </a>
       <ul className="permalinks">
         <li>

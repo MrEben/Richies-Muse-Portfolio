@@ -6,14 +6,18 @@ footer {
   margin-top: 7rem;
   display: grid;
 }
-footer a {
-  color: black;
-}
+
 .footer__logo {
-  font-size: 2rem;
-  font-weight: 500;
   margin-bottom: 2rem;
   display: inline-block;
+}
+.foot-logo {
+  /* height: 4rem;
+  width: auto; */
+  background-size: 30px 40px;
+  height: 15rem;
+  width: 10rem;
+  margin: 0 auto;
 }
 .permalinks {
   flex-wrap: wrap;
@@ -25,6 +29,14 @@ footer a {
   font-weight: 500;
   letter-spacing: 0.2rem;
   display: flex;
+}
+.permalinks a {
+  color: var(--clr-black);
+  font-weight: 400;
+  transition: var(--transition);
+}
+.permalinks a:hover {
+  color: var(--clr-white);
 }
 .footer__socials {
   display: flex;
