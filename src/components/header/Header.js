@@ -11,8 +11,10 @@ const Header = () => {
   return (
     <>
       <header id="header">
-        <div class="heading">
-          <h1 className="animate__fadeInLeft">welcome to the future of excellent designs</h1>
+        <div class="heading ">
+          <h1 className="animate__fadeInLeft">
+            welcome to the future of excellent designs
+          </h1>
         </div>
         <div class="heading-content">
           <div class="main-heading-container">
@@ -22,7 +24,7 @@ const Header = () => {
                 <p>neat designs, work on time,exceptional works</p>
               </div>
               <div class="percentage">
-                <h2>60%</h2>
+                <h2>90%</h2>
                 <p>neat designs, work on time,exceptional works</p>
               </div>
               <div class="connect">

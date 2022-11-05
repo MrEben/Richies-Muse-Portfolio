@@ -1,7 +1,7 @@
 import React from "react";
 import "./footer.css";
 import { FaBehance, FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa";
-import logo from "../../assets/Wise b SG_Main Logo 2.svg";
+import logo from "../../assets/svglogo.svg";
 
 const Footer = () => {
   return (

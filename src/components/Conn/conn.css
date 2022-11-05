@@ -17,7 +17,7 @@
 }
 .main-contact-section {
   display: grid;
-  grid-template-columns: 35% 55%;
+  grid-template-columns: 37% 55%;
   gap: 2%;
   height: fit-content;
 }
@@ -51,7 +51,6 @@ h4 {
 }
 .option-link h4:hover {
   color: var(--clr-primary-1);
-  font-size: 1.3rem;
 }
 .option-link h4 {
   text-transform: none;

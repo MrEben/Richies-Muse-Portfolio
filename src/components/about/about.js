@@ -14,7 +14,7 @@ const About = () => {
               <img className="about-img" src={Img} alt="" />
             </div>
           </div>
-          <div className="about__content">
+          <div className="about__content bounceInDown">
             <div className="about__cards">
               {experiences.map((item) => {
                 const { id, work, icon, experience } = item;
@@ -27,7 +27,7 @@ const About = () => {
                 );
               })}
             </div>
-            <p className="animate__fadeInLeft">
+            <p>
               The primary objective of any design is to speak to it's customers
               effectively to convey messages and ideas. As a designer, I ensure
               that the custumer understands the objective of the design
