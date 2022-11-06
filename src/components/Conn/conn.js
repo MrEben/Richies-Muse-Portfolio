@@ -1,8 +1,22 @@
+import { useRef } from "react";
 import "./conn.css";
+import emailjs from "emailjs-com";
 import { options } from "./data";
 import { social } from "../nav/data";
 
 const Conn = () => {
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+    e.target.reset();
+    emailjs.sendForm(
+      "YOUR_SERVICE_ID",
+      "YOUR_TEMPLATE_ID",
+      form.current,
+      "YOUR_USER_ID"
+    );
+  };
+
   return (
     <section id="contact" className="conn container">
       <article className="head">
@@ -50,7 +64,7 @@ const Conn = () => {
             </div>
           </div>
           <div className="right-acesses">
-            <form action="">
+            <form ref={form} onSubmit={sendEmail}>
               <input
                 type="text"
                 name="name"

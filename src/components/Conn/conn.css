@@ -126,19 +126,13 @@ textarea {
   width: 100%;
   background: transparent;
   resize: none;
-  border-radius: 1.2rem;
-  border: 2px solid black;
+  border-radius: var(--radius);
+  border: 1.5px solid black;
   padding: 1.5rem;
   color: var(--clr-black);
+  box-shadow: var(--light-shadow);
 }
-.inputs {
-  border-left: none;
-  border-right: none;
-  border-top: none;
-  border-radius: 0;
-  margin-top: 0;
-  border-color: var(--clr-primary-8);
-}
+
 /* =====MEDIA QUERRIES(SMALL)====== */
 @media screen and (max-width: 1024px) {
   .conn.container {

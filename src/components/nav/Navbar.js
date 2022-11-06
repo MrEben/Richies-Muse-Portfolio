@@ -1,8 +1,8 @@
-import React, { useState, useRef, useEffect } from 'react';
-import { FaBars } from 'react-icons/fa';
-import { links, social } from './data';
-import logo from '../../assets/Wise b SG_Main Logo 2.svg';
-import './nav.css';
+import React, { useState, useRef, useEffect } from "react";
+import { FaBars } from "react-icons/fa";
+import { links, social } from "./data";
+import logo from "../../assets/Wise b SG_Main Logo 22.png";
+import "./nav.css";
 
 const Navbar = () => {
   const [navbar, setnavbar] = useState(false);
@@ -19,17 +19,20 @@ const Navbar = () => {
       setnavbar(false);
     }
   };
-  window.addEventListener('scroll', changeNavBackground);
+  window.addEventListener("scroll", changeNavBackground);
   useEffect(() => {
     const linksHeight = linksRef.current.getBoundingClientRect().height;
     if (showLinks) {
       linksContainerRef.current.style.height = `${linksHeight}px`;
     } else {
-      linksContainerRef.current.style.height = '0px';
+      linksContainerRef.current.style.height = "0px";
     }
   }, [showLinks]);
+  const removeNav = () => {
+    linksContainerRef.current.style.height = "0px";
+  };
   return (
-    <nav className={navbar ? 'active' : 'not-active'}>
+    <nav className={navbar ? "active" : "not-active"}>
       <div className="nav-center">
         <div className="nav-header">
           <img src={logo} className="logo" alt="logo" />
@@ -43,7 +46,9 @@ const Navbar = () => {
               const { id, url, text } = link;
               return (
                 <li key={id}>
-                  <a href={url}>{text}</a>
+                  <a onClick={removeNav} href={url}>
+                    {text}
+                  </a>
                 </li>
               );
             })}

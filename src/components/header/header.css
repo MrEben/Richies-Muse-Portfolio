@@ -155,7 +155,7 @@ header {
 
 @media screen and (max-width: 600px) {
   .heading {
-    margin-top: 2.6rem;
+    margin-top: 4rem;
   }
   .heading h1 {
     width: 90vw;
