@@ -10,10 +10,10 @@ const Conn = () => {
     e.preventDefault();
     e.target.reset();
     emailjs.sendForm(
-      "YOUR_SERVICE_ID",
-      "YOUR_TEMPLATE_ID",
+      "service_aquqlaa",
+      "template_gawje79",
       form.current,
-      "YOUR_USER_ID"
+      "YNxnhoPemMu24c9Yx"
     );
   };
 
