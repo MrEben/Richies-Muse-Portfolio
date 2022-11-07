@@ -13,7 +13,7 @@ export const options = [
     id: 2,
     icon: <BsWhatsapp />,
     info: "+233 54 497 0431",
-    link: "https://api.whatsapp.com/send?phone=+233544970431",
+    link: "https://api.whatsapp.com/send?phone=+233544970431&text=Hello",
   },
   {
     id: 3,

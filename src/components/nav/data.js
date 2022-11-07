@@ -37,7 +37,7 @@ export const social = [
   },
   {
     id: 3,
-    url: "https://www.linkedin.com/richardsewornu-10b503128",
+    url: "https://www.linkedin.com/in/richard-sewornu-10b503128",
     icon: <FaLinkedin />,
   },
   {

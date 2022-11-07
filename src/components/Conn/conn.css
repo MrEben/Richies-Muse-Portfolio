@@ -86,7 +86,7 @@ h4 {
   height: 10rem;
   width: 100%;
   background: var(--clr-grey-5);
-  border-radius: 100% 0 0 0;
+  border-radius: 100% 0% 0% 100% / 100% 0% 100% 0%;
 }
 .box-2 {
   background: var(--clr-grey-2);
