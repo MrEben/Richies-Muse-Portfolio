@@ -2,6 +2,7 @@ import React from "react";
 import "./footer.css";
 import { FaBehance, FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa";
 import logo from "../../assets/Wise b SG_Main Logo 22.png";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -11,7 +12,7 @@ const Footer = () => {
       </a>
       <ul className="permalinks">
         <li>
-          <a href="#header">home</a>
+          <Link to="/">home</Link>
         </li>
         <li>
           <a href="#works">works</a>
