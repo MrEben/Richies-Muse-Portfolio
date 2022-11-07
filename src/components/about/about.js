@@ -31,8 +31,8 @@ const About = () => {
               The primary objective of any design is to speak to it's customers
               effectively to convey messages and ideas. As a designer, I ensure
               that the custumer understands the objective of the design
-              effectively. I ensure with mulyiple tools depending on the medium
-              and goals of the final project. Praesentium,
+              effectively. I ensure this with multiple tools depending on the
+              medium and goals of the final project.
             </p>
             <a href="#contact" className="btn btn-primary">
               lets talk
