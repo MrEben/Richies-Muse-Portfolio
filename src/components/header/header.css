@@ -153,7 +153,7 @@ header {
 }
 /* =====MEDIA QUERRIES(SMALL)====== */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 620px) {
   .heading {
     margin-top: 4rem;
   }
@@ -171,6 +171,7 @@ header {
   .photos-here {
     height: 30vh;
     margin-top: 1rem;
+    margin-bottom: 1.3rem;
   }
   .main-heading-container {
     display: flex;
@@ -186,7 +187,7 @@ header {
     margin-top: 3rem;
   }
   .img-contain-4 {
-    margin-top: 8.5rem;
+    margin-top: 8.3rem;
   }
   .brand-identity {
     height: fit-content;

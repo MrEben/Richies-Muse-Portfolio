@@ -153,11 +153,7 @@ textarea {
 
 @media screen and (max-width: 620px) {
   .conn.container {
-    /* width: 85%; */
     margin-left: 0.5rem;
-  }
-  .main-contact-section {
-    width: inherit;
   }
   .contact-info {
     width: 95vw;
