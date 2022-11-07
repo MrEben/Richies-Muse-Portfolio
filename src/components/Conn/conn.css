@@ -156,6 +156,15 @@ textarea {
     /* width: 85%; */
     margin-left: 0.5rem;
   }
+  .main-contact-section {
+    width: inherit;
+  }
+  .contact-info {
+    width: 95vw;
+  }
+  .contain-all {
+    padding: 2rem 0.5rem;
+  }
   .upper-section {
     grid-template-columns: 1fr;
   }
@@ -169,6 +178,7 @@ textarea {
   .head {
     display: flex;
     flex-direction: column;
+    width: 95vw;
   }
   .head-ing h2 {
     font-size: 1.1rem;
