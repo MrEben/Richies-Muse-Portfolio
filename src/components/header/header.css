@@ -170,7 +170,7 @@ header {
   }
   .photos-here {
     height: 30vh;
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
   .main-heading-container {
     display: flex;
@@ -190,7 +190,8 @@ header {
   }
   .brand-identity {
     height: fit-content;
-    margin-top: 1rem;
+    margin-top: 0.7rem;
+    margin-bottom: 0;
   }
   .brand-img {
     display: none;
