@@ -197,4 +197,7 @@ header {
   .brand-img {
     display: none;
   }
+  .brand-background{
+    height: 25%;
+  }
 }
