@@ -75,7 +75,6 @@ h4 {
 .social-icons-here a {
   font-size: 1.2rem;
   color: white;
-  /* background: var(--clr-black); */
 }
 .social-icons-here a:hover {
   color: var(--clr-pink);
@@ -164,6 +163,9 @@ textarea {
   .upper-section {
     grid-template-columns: 1fr;
   }
+  .option-link {
+    gap: 0.7rem;
+  }
   .right-acesses {
     grid-template-rows: none;
   }
@@ -175,6 +177,7 @@ textarea {
     display: flex;
     flex-direction: column;
     width: 95vw;
+    letter-spacing: normal;
   }
   .head-ing h2 {
     font-size: 1.1rem;

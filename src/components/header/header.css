@@ -187,7 +187,7 @@ header {
     margin-top: 3rem;
   }
   .img-contain-4 {
-    margin-top: 8rem;
+    margin-top: 7.5rem;
   }
   .brand-identity {
     height: fit-content;
@@ -197,7 +197,7 @@ header {
   .brand-img {
     display: none;
   }
-  .brand-background{
+  .brand-background {
     height: 25%;
   }
 }

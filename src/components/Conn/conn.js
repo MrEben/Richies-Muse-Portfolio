@@ -30,7 +30,7 @@ const Conn = () => {
               <div className="head-ing">
                 <h2>contact informaton</h2>
                 <h4>
-                  fill up the form and i wil get back to you within 24hours
+                  fill up the form and i will get back to you within 24hours
                 </h4>
                 {options.map((item) => {
                   const { id, icon, info, link } = item;
